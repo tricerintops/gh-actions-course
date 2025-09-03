@@ -3,3 +3,11 @@ node_modules
 # Section 2: Tools and Initial Setup
 # 8. Creating a GitHub Repository for the Course
 # 1 min 41 seconds into the video
+
+.DS_Store
+# need to add this since I'm on a Mac
+# .DS_Store (short for Desktop Services Store) is a macOS system file that stores folder view settings and metadata for
+# Finder. It's created automatically by Finder in each folder you open. It stores things like icon positions in a
+# folder, window size and layout, sort order (by name, kind, date, etc.), view style (list, grid, column, gallery), and
+# background image or color for the folder. Basically, it remembers how you arranged and customized a folder in Finder.
+# It's user-specific and has nothing to do with your codebase.
