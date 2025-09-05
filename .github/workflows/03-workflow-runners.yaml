@@ -9,8 +9,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   name: Show OS
-                run: echo "This job is running on an Ubuntu runner."
-                    echo ${{github.RUNNER_OS}}
+                run: |
+                    echo "This job is running on an Ubuntu runner." |
+                    echo "${RUNNER_OS}"
 
     
     windows-echo:
