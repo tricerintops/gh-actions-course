@@ -10,7 +10,7 @@ jobs:
         steps:
             -   name: Show OS
                 run: echo "This job is running on an Ubuntu runner."
-                     echo ${{$RUNNER_OS}}
+                     echo ${{github.RUNNER_OS}}
 
     
     windows-echo:
