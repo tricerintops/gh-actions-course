@@ -6,3 +6,6 @@ I've made this repository public because, regarding GitHub Actions, the use of s
 
 https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job#standard-github-hosted-runners-for-public-repositories
 
+In other words, the reason for making this repository public has nothing to do with the idea that someone else might benefit from exploring the code in it.
+
+The most useful thing I've learned from this course so far is that using Visual Studio with the GitHub Actions plug-in (created and maintained by GitHub) is an absolutely fantastic way to write and edit GitHub Actions workflows! Much much better than what I was doing before - which was just writing plain text files in Sublime Text (ie no plugins).
