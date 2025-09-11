@@ -12,15 +12,15 @@ jobs:
     echo:
         runs-on: ubuntu-latest
         steps:
-            -   name: Print start-up data
-                if: ${{inputs.debug}} == true
+            -   name: "[debug] Print start-up data"
+                if: ${{ inputs.debug }}
                 run: |
-                    echo "Triggered by: ${{github.event_name}}"
-                    echo "Branch: ${{github.ref}}"
-                    echo "Commit SHA: ${{github.sha}}"
-                    echo "Runner OS: ${{runner.os}}"
-                    echo "Runner Architecture: ${{runner.arch}}"
-                    echo "Runner Temp: ${{runner.temp}}"
+                    echo "Triggered by: ${{ github.event_name }}"
+                    echo "Branch: ${{ github.ref }}"
+                    echo "Commit SHA: ${{ github.sha }}"
+                    echo "Runner OS: ${{ runner.os }}"
+                    echo "Runner Architecture: ${{ runner.arch }}"
+                    echo "Runner Temporary Directory: ${{ runner.temp }}"
                     echo "Runner tool cache: ${{runner.tool_cache}}"
 
 

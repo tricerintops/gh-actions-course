@@ -6,7 +6,6 @@ env:
     MY_OVERWRITTEn_VAR: 'workflow'
 
 on:
-    push:
     workflow_dispatch:
         inputs:
             debug:
