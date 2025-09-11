@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   name: "[debug] Print start-up data"
-                if: ${{ inputs.debug }}
+                if: ${{ inputs.debug && github.ref == 'refs/heads/main' }}
                 run: |
                     echo "Triggered by: ${{ github.event_name }}"
                     echo "Branch: ${{ github.ref }}"
@@ -22,5 +22,12 @@ jobs:
                     echo "Runner Architecture: ${{ runner.arch }}"
                     echo "Runner Temporary Directory: ${{ runner.temp }}"
                     echo "Runner tool cache: ${{runner.tool_cache}}"
+
+            -   name: "[debug] Print when triggered from main"
+                if: ${{ inputs.debug }}
+                run: echo "I was triggered from main."
+                
+            -   name: "Greeting"
+                run: echo "Hello, world"
 
 
